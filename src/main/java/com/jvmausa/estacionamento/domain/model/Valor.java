@@ -16,16 +16,16 @@ import lombok.EqualsAndHashCode;
 @Table(name = "tbl_valor")
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class Valor {
-	
+
 	@EqualsAndHashCode.Include
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	private double valorPrimeiraHora;
-	
+
 	private double valorDemaisHoras;
-	
+
 	private OffsetDateTime dataFim;
-	
+
 }

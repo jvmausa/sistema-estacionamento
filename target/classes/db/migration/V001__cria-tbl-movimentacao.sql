@@ -1,6 +1,6 @@
 CREATE TABLE tbl_movimentacao(
 	id bigint not null auto_increment,
-    placa varchar(7),
+    placa varchar(10),
     modelo varchar(20),
     data_entrada datetime,
     data_saida datetime,
